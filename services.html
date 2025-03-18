@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Provided - Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body and page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(git.png);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up the full height of the screen */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    nav a.active {
+      background-color: #4CAF50;
+    }
+
+
+       
+
+        /* Content section styling */
+        .content {
+            flex: 1; /* Allow content to take available space */
+            padding: 30px;
+            max-width: 9000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color:black;
+        }
+
+        /* Flexbox layout for the service cards */
+        .service-card {
+            background-color: grey;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            flex: 0 0 calc(50% - 30px); /* 2 columns layout */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        /* Flexbox container for services */
+        .service-list {
+            display: grid; /* Changed from flexbox to grid */
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 5px; /* Spacing between grid items */
+            
+        }
+
+        /* Card hover effect */
+        .service-card:hover {
+            transform: translateY(-5px); /* Lift card on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            /* Footer will always be at the bottom of the page */
+        }
+
+        footer a {
+            color: #f4a261;
+            text-decoration: none;
+        }
+
+        /* For smaller screens, adjust the card layout */
+        @media (max-width: 768px) {
+            .service-card {
+                flex: 0 0 100%; /* Stack services vertically on smaller screens */
+            }
+
+            .service-list {
+                grid-template-columns: 1fr; /* Stack grid items in 1 column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Grocery Store Services</h1>
+        <p>We offer a wide range of services to make your shopping experience convenient and enjoyable.</p>
+    </header>
+
+    <nav>
+        <a href="war.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h2>Services We Provide</h2>
+
+        <div class="service-list">
+            <!-- Service 1: Fresh Produce -->
+            <div class="service-card">
+                <h3>Fresh Produce</h3>
+                <p>We offer a variety of fresh fruits and vegetables, sourced directly from local farms.</p>
+                <img src="broc.webp" alt="Fresh Produce">
+            </div>
+
+            <!-- Service 2: Online Ordering -->
+            <div class="service-card">
+                <h3>Online Ordering</h3>
+                <p>Order groceries from the comfort of your home and have them delivered directly to your doorstep.</p>
+                <img src="log.jpg" alt="Online Ordering">
+            </div>
+
+            <!-- Service 3: Same-Day Delivery -->
+            <div class="service-card">
+                <h3>Same-Day Delivery</h3>
+                <p>Need it fast? We provide same-day delivery for orders placed before noon.</p>
+                <img src="terry.jpg" alt="Same-Day Delivery" height="500px" width="400px">
+            </div>
+
+            <!-- Service 4: Specialty Products -->
+            <div class="service-card">
+                <h3>Specialty Products</h3>
+                <p>We carry a wide selection of specialty items, including gluten-free, organic, and international foods.</p>
+                <img src="view.jpg" alt="Specialty Products">
+            </div>
+
+            <!-- Service 5: In-Store Pickup -->
+            <div class="service-card">
+                <h3>In-Store Pickup</h3>
+                <p>Order online and pick up your groceries in-store to avoid waiting in line.</p>
+                <img src="getty.jpg" alt="In-Store Pickup" width="500px" height="500px">
+                <p> Book now  for quqlity services</p>
+            </div>
+
+            <!-- Service 6: Loyalty Program -->
+            <div class="service-card">
+                <h3>Loyalty Program</h3>
+                <p>Earn points on every purchase and redeem them for discounts or free products!</p>
+                <img src="hand.avif" alt="Loyalty Program">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Grocery Store. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> 
+        
+        </p>
+    </footer>
+</body>
+</html>

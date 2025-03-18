@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Grocery Store</title>
+  <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+  <style>
+    /* Inline styles for simplicity */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    label {
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="war.html" class="active">Home</a>
+    <a href="login.html"> Login</a>
+    <a href="aboutus.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+
+  <header>
+    <h1>Contact Us - Karibu Grocery Store</h1>
+  </header>
+
+  <div class="container">
+    <h2>We'd Love to Hear From You!</h2>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+      <form action="submit_form.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p><strong>Address:</strong> 256 Karibu St, Cityville, XYZ</p>
+      <p><strong>Phone:</strong> (256) 753-238558</p>
+      <p><strong>Email:</strong> Karibu.com</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Karibu Grocery Store | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
